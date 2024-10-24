@@ -1,0 +1,81 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.card {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.balloons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.balloon {
+    width: 50px;
+    height: 70px;
+    background-color: #ff6f61;
+    border-radius: 50% 50% 0 0;
+    margin: 0 10px;
+    position: relative;
+    animation: float 2s ease-in-out infinite;
+}
+
+.balloon:nth-child(2) {
+    background-color: #ffdd57;
+    animation-delay: 0.2s;
+}
+
+.balloon:nth-child(3) {
+    background-color: #68c3e8;
+    animation-delay: 0.4s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff4f41;
+}
+
+.hidden {
+    display: none;
+}
+
+#surpriseMessage {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #ff6f61;
+}
